@@ -1,0 +1,7 @@
+/vendor
+/templates_c/*
+!/templates_c/.gitkeep
+config.php
+.DS_Store
+.idea
+.vscode

@@ -1,0 +1,267 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.2s;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.main-header {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: 800;
+    color: #2c3e50;
+}
+
+.nav-link {
+    margin-left: 20px;
+    font-weight: 500;
+    color: #555;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+.btn-add {
+    background: #2c3e50;
+    color: #fff !important;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.btn-add:hover {
+    background: #34495e;
+}
+
+.main-content {
+    padding: 40px 0;
+    min-height: 80vh;
+}
+
+.category-section {
+    margin-bottom: 50px;
+}
+
+.cat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 10px;
+}
+
+.cat-header h2 {
+    margin: 0;
+    color: #2c3e50;
+}
+
+.cat-header a {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.post-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.post-card img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.post-card h3 {
+    margin: 15px;
+    font-size: 18px;
+}
+
+.post-card p {
+    margin: 0 15px 15px;
+    font-size: 14px;
+    color: #666;
+    flex-grow: 1;
+}
+
+.post-card .btn-read {
+    display: block;
+    padding: 12px;
+    text-align: center;
+    background: #f8f9fa;
+    color: #2c3e50;
+    font-weight: 600;
+    border-top: 1px solid #eee;
+    margin-top: auto;
+}
+
+.single-post {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.single-post h1 {
+    margin-top: 0;
+}
+
+.meta {
+    color: #888;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+.post-content {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-top: 20px;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    max-width: 100%;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.btn-back {
+    color: #7f8c8d;
+    font-weight: 600;
+}
+
+.btn-back:hover {
+    color: #2c3e50;
+    text-decoration: underline;
+}
+
+.btn-delete {
+    background-color: #e74c3c;
+    color: white !important;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.btn-delete:hover {
+    background-color: #c0392b;
+    text-decoration: none;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background: #218838;
+}
+
+footer {
+    background: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+    .posts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header-inner {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
